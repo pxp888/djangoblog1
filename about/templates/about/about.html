@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h1>{{about.title}}</h1>
+            <p>{{about.updated_on}}</p>
+            <p>{{about.content}}</p>
+        </div>
+        <div class="d-none d-md-block col-md-6 offset-md-2">
+            <img src="{% static 'images/ken.jpg' %}" class="scale" alt="placeholder">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
